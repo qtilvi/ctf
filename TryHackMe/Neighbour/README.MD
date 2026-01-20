@@ -1,0 +1,4 @@
+
+The challange provided me with an IPv4 presented as just that and like the following: "http://10.81.178.192", so naturally I went to that http link.  
+On that link I found a login screen; prompting me to log in via my credentials or via the 'guest' account. Since I don't have any credentials I tried login into the guest account via guest:guest, which sure enough worked.  
+After I logged in, I got redirected to my profile page, which greeted me and gave me the option to log out. After being a little stumped as to what I should do for a few seconds I noticed the url (http://10.81.178.192/profile.php?user=guest) and remembered the challange description mentioning 'IDOR' as similar content. So naturally I tried changing the user variable form 'guest' to 'admin' and sure enough I got greeted as 'admin', being welcomed to my site with the flag on the same line.
